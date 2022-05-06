@@ -12,7 +12,11 @@ export class RegisterComponent implements OnInit {
   form: any = {
     username: null,
     email: null,
-    password: null
+    password: null,
+    gender: 'Masculino',
+    birth: '1977-06-28',
+    city: 'Recife',
+    state: 'Pernambuco  '
   };
   isSuccessful = false;
   isSignUpFailed = false;
@@ -21,8 +25,8 @@ export class RegisterComponent implements OnInit {
   ngOnInit(): void { }
 
   onSubmit(): void {
-    const { username, email, password } = this.form;
-    this.authService.register(username, email, password).subscribe(
+    const { username, email, password, birth, gender, city, state } = this.form;
+    this.authService.register(username, email, password, birth, gender, city, state).subscribe(
       data => {
         console.log(data);
         this.isSuccessful = true;
