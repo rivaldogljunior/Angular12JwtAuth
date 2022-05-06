@@ -10,6 +10,7 @@ import { AuthService } from '../_services/auth.service';
 export class RegisterComponent implements OnInit {  
 
   form: any = {
+    name: 'Name Cliente',
     username: null,
     email: null,
     password: null,
@@ -25,8 +26,8 @@ export class RegisterComponent implements OnInit {
   ngOnInit(): void { }
 
   onSubmit(): void {
-    const { username, email, password, birth, gender, city, state } = this.form;
-    this.authService.register(username, email, password, birth, gender, city, state).subscribe(
+    const { name, username, email, password, birth, gender, city, state } = this.form;
+    this.authService.register(name, username, email, password, birth, gender, city, state).subscribe(
       data => {
         console.log(data);
         this.isSuccessful = true;
