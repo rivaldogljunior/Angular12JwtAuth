@@ -10,14 +10,14 @@ import { AuthService } from '../_services/auth.service';
 export class RegisterComponent implements OnInit {  
 
   form: any = {
-    name: 'Name Cliente',
+    name: null,
     username: null,
     email: null,
     password: null,
-    gender: 'Masculino',
-    birth: '1977-06-28',
-    city: 'Recife',
-    state: 'Pernambuco  '
+    gender: null,
+    birth: null,
+    city: null,
+    state: null
   };
   isSuccessful = false;
   isSignUpFailed = false;
