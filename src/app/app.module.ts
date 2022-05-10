@@ -13,6 +13,8 @@ import { BoardUserComponent } from './board-user/board-user.component';
 import { BoardModeratorComponent } from './board-moderator/board-moderator.component';
 import { authInterceptorProviders } from './_helpers/auth.interceptor';
 import { DiagnoseComponent } from './diagnose/diagnose.component';
+import { BoardAdminClientComponent } from './board-admin-client/board-admin-client.component';
+import { WelcomeUserComponent } from './welcome-user/welcome-user.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,10 @@ import { DiagnoseComponent } from './diagnose/diagnose.component';
     HomeComponent,
     BoardAdminComponent,
     BoardUserComponent,
-    BoardModeratorComponent
+    BoardModeratorComponent,
+    BoardAdminClientComponent,
+    DiagnoseComponent,
+    WelcomeUserComponent
   ],
   imports: [
     BrowserModule,
