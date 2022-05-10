@@ -7,6 +7,8 @@ import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { ProfileComponent } from './profile/profile.component';
 import { RegisterComponent } from './register/register.component';
+import { QuestionComponent } from './question/question.component';
+import { BoardAdminClientComponent } from './board-admin-client/board-admin-client.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -16,6 +18,8 @@ const routes: Routes = [
   { path: 'user', component: BoardUserComponent },
   { path: 'mod', component: BoardModeratorComponent },
   { path: 'admin', component: BoardAdminComponent },
+  { path: 'ques', component: QuestionComponent },
+  { path: 'cli', component: BoardAdminClientComponent},
   { path: '', redirectTo: 'home', pathMatch: 'full' }
 ];
 
